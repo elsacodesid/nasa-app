@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Main = () => {
   return (
-    <div>
-        
-        
+    <div className="imgContainer">
+      <img src="rice-field.jpg" className="bgImage" />
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
