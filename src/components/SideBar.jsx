@@ -1,21 +1,22 @@
 import React from "react";
 
-const SideBar = () => {
+const SideBar = ({handleToggleModal}) => {
   return (
     <div className="sidebar">
-      <div className="bgOverlay"></div>
+      <div  onClick={handleToggleModal} className="bgOverlay"></div>
       <div className="sidebarContents">
         <h2>Futuristic Rice Field</h2>
-        <div>Description</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-          minus, corrupti dolores laborum fuga dolor.
-        </p>
+        <div>
+         <p>Description</p> 
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+            minus, corrupti dolores laborum fuga dolor.
+          </p>
+        </div>
         <button>
-        <i className="fa solid fa-arrow-right"></i>
-      </button>
+          <i className="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-
     </div>
   );
 };
