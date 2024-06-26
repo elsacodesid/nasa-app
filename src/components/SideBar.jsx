@@ -13,7 +13,7 @@ const SideBar = ({handleToggleModal}) => {
             minus, corrupti dolores laborum fuga dolor.
           </p>
         </div>
-        <button>
+        <button onClick={handleToggleModal}>
           <i className="fa-solid fa-arrow-right"></i>
         </button>
       </div>
