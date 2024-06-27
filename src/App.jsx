@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      {data ? (<Main />) : (<div className="loadingState"><i className="fa-solid fa-gear"></i></div>)}
+      {data ? (<Main data={data} />) : (<div className="loadingState"><i className="fa-solid fa-gear"></i></div>)}
       {showModal && <SideBar data={data} handleToggleModal={handleToggleModal} />}
       {data && (<Footer data={data} handleToggleModal={handleToggleModal} />)}
     </>
