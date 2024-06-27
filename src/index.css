@@ -93,6 +93,8 @@ footer button:hover {
   z-index: 1000;
 }
 
+
+
 .bgOverlay {
   position: absolute;
   inset: 0;
@@ -107,7 +109,7 @@ footer button:hover {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100%;
   width: 90%;
   margin-left: auto;
@@ -134,6 +136,32 @@ footer button:hover {
 .sidebarContents button:hover{
   opacity: 0.7;
 
+}
+
+.descTitle{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.loadingState{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  animation: spin 1s linear infinite;
+}
+
+.loadingState i{
+  opacity: 0.2;
+  font-size: 3rem;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }to {
+    transform: rotate(360deg)
+  }
 }
 
 @media (min-width: 640px) {

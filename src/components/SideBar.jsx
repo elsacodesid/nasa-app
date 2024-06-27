@@ -1,16 +1,15 @@
 import React from "react";
 
-const SideBar = ({handleToggleModal}) => {
+const SideBar = ({handleToggleModal, data}) => {
   return (
     <div className="sidebar">
       <div  onClick={handleToggleModal} className="bgOverlay"></div>
       <div className="sidebarContents">
-        <h2>Futuristic Rice Field</h2>
+        <h2>{data?.title}</h2>
         <div>
-         <p>Description</p> 
+         <p className="descTitle">Description</p> 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-            minus, corrupti dolores laborum fuga dolor.
+            {data?.explanation}
           </p>
         </div>
         <button onClick={handleToggleModal}>
